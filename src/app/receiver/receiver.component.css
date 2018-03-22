@@ -1,0 +1,14 @@
+.receiverContainer {
+    border: 1px solid green;
+    height: 15rem;
+}
+
+.receivedElementsContainer {
+    margin: 0.8rem;
+    overflow: auto;
+    height: 12rem;
+}
+
+.receiveButton {
+    margin: 0.3rem;
+}

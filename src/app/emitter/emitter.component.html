@@ -1,0 +1,18 @@
+<div class="emitterContainer">
+  <div style="margin-left: 0.8rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+    <span style="font-size: large;">{{uniqueName}}</span>
+    <button class="emitButton" title="Emit an Item" (click)="emit()">Emit Something</button>
+    <button class="emitButton" title="Get Weather" (click)="getWeatherXXX()">Get Weather</button>
+  </div>
+
+    <div class="emittedElementsContainer">
+      <h3>Emitted Elements</h3>
+      <ol>
+        <li class="emittedItemElement"
+          *ngFor="let item of emittedItemsList"
+        >
+            {{item.time | date:'h:mm:ss:SSS'}}: {{item.title}}
+        </li>
+    </ol>
+  </div>
+</div>

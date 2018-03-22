@@ -1,0 +1,15 @@
+<div class="receiverContainer">
+  <button class="receiveButton" title="Start Receiving Items" (click)="startReceiving()">Start Receiving</button>
+  <button class="receiveButton" title="Stop Receiving Items" (click)="stopReceiving()">Stop Receiving</button>
+  <div class="receivedElementsContainer">
+    <h3>Received Elements</h3>
+
+    <ol>
+      <li class="receivedItemElement"
+        *ngFor="let item of receivedItemsList"
+      >
+          From: {{item.emitter}} - {{item.time | date:'h:mm:ss:SSS'}}: {{item.title}}
+      </li>
+    </ol>
+  </div>
+</div>

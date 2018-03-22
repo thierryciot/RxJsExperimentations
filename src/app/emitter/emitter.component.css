@@ -1,0 +1,15 @@
+.emitterContainer {
+  border: 1px solid blue;
+  height: 15rem;
+}
+
+.emittedElementsContainer {
+  margin: 0.8rem;
+  overflow: auto;
+  height: 12rem;
+}
+
+.emitButton {
+  float: right;
+  margin: 0.3rem;
+}

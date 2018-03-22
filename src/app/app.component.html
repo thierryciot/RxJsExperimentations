@@ -1,0 +1,35 @@
+<h3>
+  RxJs Test Multicast Subject - <label>Use ReplaySubject
+  <input #flag type="checkbox" (change)="useReplaySubject(flag.checked)" /></label>
+  <button (click)="activateSpeech()">Speak</button>
+</h3>
+<div style="height: 32rem; overflow: hidden;">
+  <table width="100%">
+    <tr>
+      <td width="50%">
+        <rxjs-emitter uniqueName="Emitter 1"></rxjs-emitter>
+      </td>
+      <td width="50%">
+        <rxjs-receiver></rxjs-receiver>
+      </td>
+    <tr>
+      <td width="50%">
+        <rxjs-emitter uniqueName="Emitter 2"></rxjs-emitter>
+      </td>
+      <td width="50%">
+        <rxjs-receiver></rxjs-receiver>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<h3>
+  Input stream from Mouse Events
+</h3>
+<div style="margin-left: 100px;">
+  <div id="boxId"
+       style="height: 100px; width: 200px; border: 1px black solid;"
+  >
+    <!--(mousemove)="mouseMove($event)"-->
+  </div>
+</div>
